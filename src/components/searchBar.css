@@ -1,0 +1,50 @@
+.search-bar {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    min-width: min-content;
+}
+
+
+.search-bar form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div {
+    flex: 1;
+}
+
+
+.caption {
+    color: red;
+    font-size: 2rem;
+    text-align: center;
+    order: -1;
+}
+
+
+form input {
+    padding: 5px;
+    font: 1rem 1.2;
+    margin-left: 5px;
+}
+
+
+
+@media screen and (min-width: 42rem) {
+    .search-bar form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+     }
+
+     .caption {
+        order: 0;
+        font-size: 1.2rem;
+     } 
+     
+     form input {
+        font: 1.2em 1.3;
+    }
+}
+
